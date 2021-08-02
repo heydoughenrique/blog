@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 import { GetStaticProps } from 'next';
 import Prismic from '@prismicio/client';
