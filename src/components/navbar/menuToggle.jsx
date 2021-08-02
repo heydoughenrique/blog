@@ -3,7 +3,6 @@ import React from "react";
 import styles from './menuToggle.module.scss'
 
 
-
 const Path = (props) => (
   <motion.path
     fill="transparent"

@@ -22,7 +22,7 @@ export function Navbar(props) {
           <div className={styles.middleSection}>
             {!isMobile && <NavLinks />}
           </div>
-          <div className={styles.rightSection}>
+          <div className={styles.rightSection} {...!isMobile && <Accessibility />} {...isMobile && <MobileNavLinks />}>
             {!isMobile && <Accessibility />}
             {isMobile && <MobileNavLinks />}
           </div>
