@@ -15,22 +15,20 @@
   display: flex;
   align-items: center;
 
-
+  .leftSection {
+    display: flex;
+  }
   
+  .middleSection {
+    display: flex;
+    flex: 2;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  .rightSection {
+    display: flex;
+  }
 
 }
 
-.leftSection {
-  display: flex;
-}
-
-.middleSection {
-  display: flex;
-  flex: 2;
-  height: 100%;
-  justify-content: center;
-}
-
-.rightSection {
-  display: flex;
-}

@@ -7,6 +7,8 @@ import { DeviceSize } from "../responsive";
 import { MobileNavLinks } from "./mobileNavLinks";
 import styles from "./index.module.scss";
 
+import { MenuCollapse } from "./teste";
+
 import {
   BrowserView,
   MobileView,
@@ -30,8 +32,7 @@ export function Navbar(props) {
             {!isMobile && <NavLinks />}
           </div>
           <div className={styles.rightSection}>
-            {isMobile && <MobileNavLinks />}
-            {!isMobile && <Accessibility />}
+            < MenuCollapse />
           </div>
 
         </div>
