@@ -7,19 +7,10 @@ import { DeviceSize } from "../responsive";
 import { MobileNavLinks } from "./mobileNavLinks";
 import styles from "./index.module.scss";
 
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile
-} from "react-device-detect";
-
 
 
 export function Navbar(props) {
   const isMobile = useMediaQuery({ maxWidth: DeviceSize.mobile });
-
-  const isMobileUser = props.Accessibility
 
   return (
     <>
@@ -32,7 +23,7 @@ export function Navbar(props) {
             {!isMobile && <NavLinks />}
           </div>
           <div className={styles.rightSection}>
-            {isMobile && <MobileNavLinks /> || <Accessibility />}
+            {!isMobile && <Accessibility /> || <MobileNavLinks />}
 
 
           </div>
