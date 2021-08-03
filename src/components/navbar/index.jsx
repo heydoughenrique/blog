@@ -19,6 +19,8 @@ import {
 export function Navbar(props) {
   const isMobile = useMediaQuery({ maxWidth: DeviceSize.mobile });
 
+  const isMobileUser = props.Accessibility
+
   return (
     <>
       <div className={styles.container}>
@@ -30,8 +32,9 @@ export function Navbar(props) {
             {!isMobile && <NavLinks />}
           </div>
           <div className={styles.rightSection}>
-            {!isMobile && <Accessibility />}
-            {isMobile && <MobileNavLinks />}
+            {isMobile && <MobileNavLinks /> || <Accessibility />}
+
+
           </div>
 
         </div>

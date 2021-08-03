@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import styles from './menuToggle.module.scss'
+import styles from './menuToggle.module.scss';
 
 
 const Path = (props) => (
