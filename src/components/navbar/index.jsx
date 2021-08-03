@@ -31,6 +31,7 @@ export function Navbar(props) {
           </div>
           <div className={styles.rightSection}>
             {isMobile && <MobileNavLinks />}
+            {!isMobile && <Accessibility />}
 
           </div>
 
