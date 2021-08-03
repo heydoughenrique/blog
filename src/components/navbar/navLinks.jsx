@@ -8,17 +8,17 @@ export function NavLinks(props) {
     <div className={styles.navLinksContainer}>
       <ul>
         <li>
-          <Link href="/" prefetch>
+          <Link href="/">
             <a>Home</a>
           </Link>
         </li>
         <li>
-          <Link href="/pricing" prefetch>
+          <Link href="/pricing">
             <a>Pricing</a>
           </Link>
         </li>
         <li>
-          <Link href="/blog" prefetch>
+          <Link href="/blog">
             <a>Blog</a>
           </Link>
         </li>
