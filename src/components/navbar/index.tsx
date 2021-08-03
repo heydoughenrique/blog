@@ -7,6 +7,8 @@ import { DeviceSize } from "../responsive";
 import { MobileNavLinks } from "./mobileNavLinks";
 import styles from "./index.module.scss";
 
+import { Media, MediaContextProvider } from "../responsive/media"
+
 
 
 export function Navbar(props) {
@@ -22,9 +24,12 @@ export function Navbar(props) {
           {!isMobile && <NavLinks />}
         </div>
         <div className={styles.rightSection}>
-          {!isMobile && <Accessibility />}
-          {isMobile && <MobileNavLinks />}
+          <MediaContextProvider>
+            <Media at="xs"><MobileNavLinks /></Media>
+            <Media greaterThan="xs"><Accessibility /></Media>
+          </MediaContextProvider>
         </div>
+
       </div>
     </div>
   );
