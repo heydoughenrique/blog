@@ -28,17 +28,10 @@ export function Navbar(props) {
           </div>
           <div className={styles.middleSection}>
             {!isMobile && <NavLinks />}
-            <MobileView>
-              <MobileNavLinks />
-            </MobileView>
           </div>
           <div className={styles.rightSection}>
-            <BrowserView>
-              <Accessibility />
-            </BrowserView>
-            <MobileView>
-              <MobileNavLinks />
-            </MobileView>
+            {!isMobile && <Accessibility />}
+            {isMobile && <MobileNavLinks />}
 
           </div>
 
