@@ -30,7 +30,7 @@ export function Navbar(props) {
             {!isMobile && <NavLinks />}
           </div>
           <div className={styles.rightSection}>
-            {!isMobile && <Accessibility />}
+
             {isMobile && <MobileNavLinks />}
 
           </div>
