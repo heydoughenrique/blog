@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import styles from './mobileNavLinks.module.scss';
 import { Accessibility } from "./accessibility";
 import { MenuToggle } from "./menuToggle";
-import styles from './mobileNavLinks.module.scss';
 import Link from 'next/link';
 
 export function MobileNavLinks(props) {
@@ -13,19 +13,19 @@ export function MobileNavLinks(props) {
       {isOpen && (
         <ul>
           <li>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
+
+            <a href="">Home</a>
+
           </li>
           <li>
-            <Link href="/pricing">
-              <a>Pricing</a>
-            </Link>
+
+            <a href="">Pricing</a>
+
           </li>
           <li>
-            <Link href="/blog">
-              <a>Blog</a>
-            </Link>
+
+            <a href="">Blog</a>
+
           </li>
           <div className={styles.marginer} />
           <Accessibility />
