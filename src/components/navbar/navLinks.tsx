@@ -18,6 +18,11 @@ export function NavLinks(props) {
           </Link>
         </li>
         <li>
+          <Link href="/terms">
+            <a>Terms</a>
+          </Link>
+        </li>
+        <li>
           <Link href="/blog">
             <a>Blog</a>
           </Link>

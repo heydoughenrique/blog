@@ -16,6 +16,7 @@
       color: var(--grey-550);
       font-weight: 500;
       font-size: 1rem;
+      letter-spacing: 0.045rem;
       align-items: center;
       justify-content: center;
       display: flex;
@@ -24,6 +25,10 @@
     
       &:hover {
         border-top: 2px solid var(--yellow-500);
+
+        a { 
+          color: var(--blue-500);
+        }
       }
 
       a {

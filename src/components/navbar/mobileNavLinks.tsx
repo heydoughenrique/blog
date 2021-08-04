@@ -13,19 +13,24 @@ export function MobileNavLinks(props) {
       {isOpen && (
         <ul>
           <li>
-
-            <a href="">Home</a>
-
+            <Link href="/">
+              <a>Home</a>
+            </Link>
           </li>
           <li>
-
-            <a href="">Pricing</a>
-
+            <Link href="/pricing">
+              <a>Pricing</a>
+            </Link>
           </li>
           <li>
-
-            <a href="">Blog</a>
-
+            <Link href="/terms">
+              <a>Terms</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blog">
+              <a>Blog</a>
+            </Link>
           </li>
           <div className={styles.marginer} />
           <Accessibility />
