@@ -30,7 +30,37 @@
   margin-top: 2rem;
   line-height: 2rem;
   font-size: 1.125rem;
-  color: var(--gray-50);
+  color: var(--grey-600);
+
+
+  ol {
+    list-style: none;
+    padding: 0.8rem 0 1.6rem 0;
+
+    li {
+      counter-increment: my-awesome-counter 1;
+      padding: 0.85rem 0 0 3rem;
+      font-size: 1.1rem;
+      letter-spacing: 0rem;
+      
+    }
+    li::before {
+      color: var(--grey-800);
+      background: #dfecfd;
+      
+      font-weight: 500;
+      content: counter(my-awesome-counter);
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      margin-left: -48px;
+      margin-right: 24px;
+      border-radius: 99px;
+    }
+  }
 
   p, ul {
     margin: 1.5rem 0;
@@ -40,8 +70,18 @@
 
       li {
         margin: 0.5rem 0;
-        
       }
+
+    }
+  }
+
+  a { 
+    color: var(--blue-500);
+    font-weight: 700;
+    text-decoration: underline;
+
+    &:hover {
+      filter: brightness(0.8);
     }
   }
 }
@@ -76,8 +116,18 @@
   .termsContent {
     margin-top: 2rem;
     line-height: 2rem;
-    font-size: 1.125rem;
-    color: var(--gray-50);
+    font-size: 1rem;
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    ol {
+      li {
+        font-size: 1rem;
+      }
+    }
+
   
     p, ul {
       margin: 1.5rem 0;

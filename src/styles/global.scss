@@ -42,9 +42,9 @@ $title-font: 'Inter', sans-serif;
 }
 
 body, input, textarea, select, button {
-  font: 300 1rem $body-font;
+  font: 400 1rem $body-font;
   overflow-x: hidden;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.012rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, strong {
   font-family: $title-font;
   color: var(--grey-800);
   font-weight: 600;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.025rem;
 }
 
 p {

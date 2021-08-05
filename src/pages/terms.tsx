@@ -28,7 +28,7 @@ export default function TermsService({ terms }: TermsProps) {
           <main className={styles.container}>
             <article className={styles.terms}>
               <h1>{terms.title}</h1>
-              <time>{terms.updatedAt}</time>
+              <time>Atualizado em {terms.updatedAt}</time>
               <div
                 className={styles.termsContent}
                 dangerouslySetInnerHTML={{ __html: terms.fullcontent }} />
@@ -57,7 +57,7 @@ export const getStaticProps: GetStaticProps = async () => {
     return {
       slug: term.uid,
       title: RichText.asText(term.data.title),
-      updatedAt: new Date(term.last_publication_date).toLocaleDateString('pt-BR', {
+      updatedAt: new Date(term.last_publication_date).toLocaleDateString('en-US', {
         day: '2-digit',
         month: 'long',
         year: 'numeric'
