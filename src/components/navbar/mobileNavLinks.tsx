@@ -6,6 +6,9 @@ import Link from 'next/link';
 
 export function MobileNavLinks(props) {
   const [isOpen, setOpen] = useState(false);
+  const toggle = () => setOpen(!isOpen);
+  const hide = () => setOpen(false);
+  const show = () => setOpen(true);
 
   return (
     <div className={styles.navLinksContainer}>
@@ -14,29 +17,30 @@ export function MobileNavLinks(props) {
         <ul>
           <li>
             <Link href="/">
-              <a>Home</a>
+              <a onClick={toggle} onBlur={hide} onFocus={show}>Home</a>
             </Link>
           </li>
           <li>
             <Link href="/pricing">
-              <a>Pricing</a>
+              <a onClick={toggle} onBlur={hide} onFocus={show}>Pricing</a>
             </Link>
           </li>
           <li>
             <Link href="/terms">
-              <a>Terms</a>
+              <a onClick={toggle} onBlur={hide} onFocus={show}>Terms</a>
             </Link>
           </li>
           <li>
             <Link href="/blog">
-              <a>Blog</a>
+              <a onClick={toggle} onBlur={hide} onFocus={show}>Blog</a>
             </Link>
           </li>
           <div className={styles.marginer} />
           <Accessibility />
         </ul>
-      )}
+      )
+      }
 
-    </div>
+    </div >
   );
 }
