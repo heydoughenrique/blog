@@ -13,24 +13,29 @@
     li {
       height: 100%;
       padding: 0 1.1em;
-      color: var(--grey-550);
-      font-weight: 500;
+      color: var(--grey-700);
+      font-weight: 400;
       font-size: 1rem;
       letter-spacing: 0.045rem;
       align-items: center;
       justify-content: center;
       display: flex;
       border-top: 2px solid transparent;
-      transition: all 220ms ease-in-out;
+      transition: all 20ms ease-in-out;
     
       &:hover {
-        border-top: 2px solid var(--yellow-500);
+        border-top: 2px solid var(--blue-500);
+        font-weight: 600;
+        letter-spacing: 0.03rem;
 
         a { 
           color: var(--blue-500);
+          text-shadow: 0px 0px 1px (--blue-500);
         }
+
       }
 
+      
       a {
         text-decoration: none;
         color: inherit;

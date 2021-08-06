@@ -9,9 +9,12 @@
   --grey-50: #fafbfe;
   --grey-100: #f4f8f9;
   --grey-400: #d6dde4;
+  
   --grey-500:#adb5bd;
   --grey-550:#98a1aa;
   --grey-600: #495057;
+  --grey-700: #696969;
+
   --grey-800: #1d2b36;
 
 
@@ -48,6 +51,7 @@ body, input, textarea, select, button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern';
 }
 
 h1, h2, h3, h4, h5, h6, strong {
