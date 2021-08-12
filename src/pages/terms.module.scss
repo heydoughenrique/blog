@@ -9,7 +9,6 @@
   margin: 5rem auto 0;
 
   h1 { 
-    font-size: 3.5rem;
     font-weight: 700;
   }
 
@@ -29,7 +28,6 @@
 .termsContent {
   margin-top: 2rem;
   line-height: 2rem;
-  font-size: 1.125rem;
   color: var(--grey-600);
 
 
@@ -97,7 +95,6 @@
     margin: 5rem auto 0;
   
     h1 { 
-      font-size: 2.2rem;
       font-weight: 700;
     }
   
@@ -107,8 +104,7 @@
   
     time {
       display: block;
-      font-size: 1rem;
-      color: vaR(--gray-300);
+      color: var(--blue-500);
       margin-top: 1.5rem;
     }
   }
@@ -117,10 +113,6 @@
     margin-top: 2rem;
     line-height: 2rem;
     font-size: 1rem;
-
-    p {
-      font-size: 1.1rem;
-    }
 
     ol {
       li {

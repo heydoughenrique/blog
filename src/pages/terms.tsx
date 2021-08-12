@@ -28,7 +28,7 @@ export default function TermsService({ terms }: TermsProps) {
           <main className={styles.container}>
             <article className={styles.terms}>
               <h1>{terms.title}</h1>
-              <time>Atualizado em {terms.updatedAt}</time>
+              <time>Updated on {terms.updatedAt}</time>
               <div
                 className={styles.termsContent}
                 dangerouslySetInnerHTML={{ __html: terms.fullcontent }} />

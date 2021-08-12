@@ -19,7 +19,11 @@
 
 
   --blue-500: #1a73e8;
+  --yellow-800: #a18117;
   --yellow-500: #ffd355;
+  --yellow-400:#ffdc77;
+  --yellow-200: #fbeedb;
+  --yellow-100: #fbf6ee;
 
 }
 
@@ -41,10 +45,9 @@ $title-font: 'Inter', sans-serif;
  body {
   background: var(--white);
   color: var(--grey-800);
-
 }
 
-body, input, textarea, select, button {
+body, input, textarea, select, button, time {
   font: 400 1rem $body-font;
   overflow-x: hidden;
   letter-spacing: 0.012rem;
@@ -54,21 +57,29 @@ body, input, textarea, select, button {
   font-feature-settings: 'kern';
 }
 
+p, ol, li, ul, h1, h2, h3, h4, h5, h6, strong, span, time {
+  &::selection {
+    color: var(--grey-800);
+    background-color: var(--yellow-200);
+  }
+}
+
 h1, h2, h3, h4, h5, h6, strong {
   font-family: $title-font;
   color: var(--grey-800);
   font-weight: 600;
-  letter-spacing: -0.025rem;
+  letter-spacing: -0.025rem; // -0.4px
 }
 
 p {
-  font-size: 1.25rem;
-  line-height: 1.65em;
+  font-size: 1.25rem; // 20px
+  line-height: 2rem; // 32px
 }
 
+
 h1 {
-  font-size: 2.8rem;
-  line-height: 3.5rem;
+  font-size: 3.5rem; // 56px
+  line-height: 3.75rem; // 60px
 }
 
 h2 {
@@ -78,13 +89,13 @@ h2 {
 
 @media (max-width: 420px) {
   p {
-    font-size: 1.25rem;
-    line-height: 1.65em;
+    font-size: 1.125rem; // 18px
+    line-height: 1.875rem; // 30px
   }
   
   h1 {
-   font-size: 2.2rem;
-   line-height: 2.7rem;
+   font-size: 2.25rem; // 36px
+   line-height: 2.5rem; // 40px
   }
 
   h2 {
