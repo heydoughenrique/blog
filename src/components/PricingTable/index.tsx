@@ -1,4 +1,5 @@
 import styles from './pricing-table.module.scss'
+import { CgCheck } from "@react-icons/all-files/cg/CgCheck";
 
 export function PricingTable() {
   return (
@@ -13,20 +14,20 @@ export function PricingTable() {
           <a href="/">Get Started</a>
         </button>
         <ul>
-          <li>Custom website</li>
-          <li>Blog ready</li>
-          <li>Brand style guide</li>
-          <li>SEO optimization </li>
-          <li>Security</li>
-          <li>Hosting included</li>
-          <li>Software updates</li>
-          <li>Integrations</li>
-          <li>HIPAA compliance</li>
-          <li>Weekly Backups</li>
-          <li>Premium plugins</li>
-          <li>14-day money back guarantee</li>
-          <li>Cancel anytime</li>
-          <li>Basic support</li>
+          <li><CgCheck />Custom website</li>
+          <li><CgCheck />Blog ready</li>
+          <li><CgCheck />Brand style guide</li>
+          <li><CgCheck />SEO optimization </li>
+          <li><CgCheck />Security</li>
+          <li><CgCheck />Hosting included</li>
+          <li><CgCheck />Software updates</li>
+          <li><CgCheck />Integrations</li>
+          <li><CgCheck />HIPAA compliance</li>
+          <li><CgCheck />Weekly Backups</li>
+          <li><CgCheck />Premium plugins</li>
+          <li><CgCheck />14-day money back guarantee</li>
+          <li><CgCheck />Cancel anytime</li>
+          <li><CgCheck />Basic support</li>
         </ul>
       </div>
       <div className={styles.pricingItem}>

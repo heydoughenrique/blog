@@ -5,7 +5,7 @@ export function Logo(props) {
   return (
     <div className={styles.logoWrapper}>
       <div className={styles.logoImg}>
-        <Link href="/" prefetch>
+        <Link href="/">
           <a>
             <img src="/images/logo-strides.svg" alt="Strides Digital Logo" />
           </a>
