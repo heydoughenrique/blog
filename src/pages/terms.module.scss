@@ -19,7 +19,7 @@
   time {
     display: block;
     font-size: 1.125rem;
-    color: vaR(--blue-500);
+    color: var(--primary-500);
     font-weight: 700;
     margin-top: 1.5rem;
   }
@@ -28,8 +28,6 @@
 .termsContent {
   margin-top: 2rem;
   line-height: 2rem;
-  color: var(--grey-600);
-
 
   ol {
     list-style: none;
@@ -43,7 +41,7 @@
       
     }
     li::before {
-      color: var(--grey-800);
+      color: var(--primary-800);
       background: #dfecfd;
       
       font-weight: 500;
@@ -74,7 +72,7 @@
   }
 
   a { 
-    color: var(--blue-500);
+    color: var(--primary-500);
     font-weight: 700;
     text-decoration: underline;
 
@@ -104,7 +102,7 @@
   
     time {
       display: block;
-      color: var(--blue-500);
+      color: var(--primary-500);
       margin-top: 1.5rem;
     }
   }

@@ -27,6 +27,11 @@ export default function Home({ product }: HomeProps) {
             </button>
           </Link>
 
+
+
+
+
+
         </section>
 
         <img src="/images/image-strides.png" alt="Girl coding" />

@@ -1,6 +1,6 @@
 .headerContainer {
   height: 5rem;
-  border-bottom: .0625rem solid var(--grey-50);
+  border-bottom: .0625rem solid var(--neutral-100);
   box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 10%);
 }
 
@@ -29,7 +29,6 @@
       padding: 0 0.5rem;
       height: 5rem;
       line-height: 5rem;
-      color: var(--gray-300);
       transition: color 0.2s;
 
       & + a {
