@@ -18,6 +18,7 @@ export function PricingTable() {
           <li><CgCheck />Blog ready</li>
           <li><CgCheck />Brand style guide</li>
           <li><CgCheck />SEO optimization </li>
+          <li><CgCheck />Stock Photos </li>
           <li><CgCheck />Security</li>
           <li><CgCheck />Hosting included</li>
           <li><CgCheck />Software updates</li>
