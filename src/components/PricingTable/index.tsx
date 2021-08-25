@@ -1,7 +1,25 @@
 import styles from './pricing-table.module.scss'
 import { CgCheck } from "@react-icons/all-files/cg/CgCheck";
+import { api } from '../../services/api';
+import { getStripeJs } from '../../services/stripe-js';
+
+
 
 export function PricingTable() {
+  async function handleSubscribe() {
+    try {
+      const response = await api.post('/subscribe')
+
+      const { sessionId } = response.data;
+
+      const stripe = await getStripeJs()
+
+      await stripe.redirectToCheckout(sessionId)
+    } catch (err) {
+      alert(err.message);
+    }
+  }
+
   return (
     <div className={styles.pricingTable}>
       <div className={styles.pricingItem}>
@@ -10,8 +28,10 @@ export function PricingTable() {
         <p><small>Get your smooth and custom website with our core features.</small></p>
         <span>129</span>
         <span>169</span>
-        <button>
-          <a href="/">Get Started</a>
+        <button
+          type="button"
+          onClick={handleSubscribe}> teste
+
         </button>
         <ul>
           <li><CgCheck />Custom website</li>
