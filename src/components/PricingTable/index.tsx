@@ -19,7 +19,7 @@ export function PricingTable() {
           <li>
             <CgCheck />Custom website
             <span>
-              Get a superb and custom website. Beautiful design, acessible, easy to use, conversion focused, secure and fast loading.
+              Get a superb and custom website. Beautiful design, accessible, easy to use, conversion focused, secure and fast loading.
             </span>
           </li>
           <li>
@@ -67,12 +67,6 @@ export function PricingTable() {
             <CgCheck />Integrations
             <span>
               Bring and integrate all of your favorites tools and systems to your website.
-            </span>
-          </li>
-          <li>
-            <CgCheck />HIPAA compliance
-            <span>
-              No risk at violating HIPAA. We build a HIPAA-compliant site with all privacy and secure rules.
             </span>
           </li>
           <li>
