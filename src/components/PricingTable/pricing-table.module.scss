@@ -59,6 +59,7 @@
     // Price symbols
     span:nth-of-type(2),
     span:nth-of-type(3)  {
+      color: var(--neutral-800);
 
       &::before {
         content: '$';
@@ -70,14 +71,14 @@
     }
     // Main price
     span:nth-of-type(2) {
-      font-size: 4rem;
+      font-size: 3.6rem;
 
       &::before {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
       }
   
       &::after {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
       }  
     }
     // Sale price
@@ -104,6 +105,54 @@
         text-decoration: underline dotted;
         list-style-type: none;
 
+        display: block;
+        position: relative;
+
+        &:hover span {
+          color:var(--neutral-100);
+          opacity: 1;
+          visibility: visible;
+          z-index: 9999;
+        }
+
+        span {
+          background-color: var(--neutral-900);
+          border-radius: 6px;
+          color: #fff;
+          font-size: 0.9rem;
+          font-weight: 400;
+          line-height: 1.6em;
+          padding: 18px 18px;
+          text-align: center;
+          visibility: hidden;
+          width: 240px;
+          z-index: 9998;
+          /* Position the tooltip text */
+          position: absolute;
+          z-index: 9998;
+          left: 50%;
+          bottom: 100%;
+          margin-left: -120px;
+          /* Use half of the width (120/2 = 60), to center the tooltip */
+          /* Fade in tooltip */
+          opacity: 0;
+          -webkit-transition: opacity 0.3s;
+          transition: opacity 0.3s;
+        }
+
+        span::after {
+            border-color: black transparent transparent transparent;
+            border-style: solid;
+            border-width: 5px;
+            content: " ";
+            left: 50%;
+            margin-left: -5px;
+            position: absolute;
+            top: 100%;
+            /* At the bottom of the tooltip */
+        }
+         
+
         &::before {
           background-image: url('/images/done icon for our profissional website service features.svg');
           background-repeat: no-repeat;
@@ -113,6 +162,10 @@
           width: 32px;
           vertical-align: middle;
         }
+        
+        
+        
+        
       }
     }
   }

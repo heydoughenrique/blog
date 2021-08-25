@@ -190,17 +190,17 @@ button {
 }
 
 .btn-secondary {
-  background: var(--grey-100);
-  border: 0.08rem solid var(--grey-400);
+  background: var(--primary-400);
+  border: 0.08rem solid var(--primary-400);
   
 
   a {
-    color: var(--light-400);
+    color: var(--neutral-100);
   }
 
   &:hover {
-    background: var(--light-400);
-    border: 0.08rem solid var(--grey-400);
+    background: var(--primary-500);
+    border: 0.08rem solid var(--primary-500);
   }
 }
 
