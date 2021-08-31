@@ -2,10 +2,11 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: ('/kf', '/katiafantes, /katia_fantes, /katia-fantes'),
+        source: ('/testekatiafantes'),
         destination: process.env.NOTION_KF_KATIA_FANTES,
         permanent: true,
       },
     ]
-  },
+  }
 }
+
