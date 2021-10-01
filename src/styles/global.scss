@@ -1,11 +1,15 @@
+// This file follows Figma File Structure. Make sure every info equals do Figma file.
+
+@use 'text-sizes';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+// 1 - Colors
 :root {
-
   --primary-100: #E2F3FD;
   --primary-200: #C3E6FD;
   --primary-300: #A3D9FF;
@@ -35,64 +39,25 @@
   --neutral-700: #2F4E74;
   --neutral-800: #213650;
   --neutral-900: #152B47;
-
-
-  --grey-50: #fafbfe;
-  --grey-100: #f4f8f9;
-  --grey-400: #d6dde4;
-  
-  --grey-500:#adb5bd;
-  --grey-550:#98a1aa;
-  --grey-600: #495057;
-  --grey-700: #696969;
-
-  --grey-800: #1d2b36;
-
-
-  --blue-500: #1a73e8;
-  --yellow-800: #a18117;
-  --yellow-500: #ffd355;
-  --yellow-400:#ffdc77;
-  --yellow-200: #fbeedb;
-  --yellow-100: #fbf6ee;
-
 }
 
-$body-font: 'Inter', sans-serif;
+// 2 - Text Styles
+
 $title-font: 'Inter', sans-serif;
+$body-font: 'Inter', sans-serif;
 
-@media (max-width: 1080px) { 
-  html {
-    font-size: 93.75%;
-  }
- }
-
- @media (max-width: 720px) { 
-  html {
-    font-size: 87.5%;
-  }
- }
-
- body {
-  background: var(--white);
+body {
   color: var(--neutral-600);
 }
 
 body, input, textarea, select, button, time {
   font: 400 1rem $body-font;
-  overflow-x: hidden;
-  letter-spacing: 0.012rem;
+  letter-spacing: 0.0125rem; // 0.2px
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-feature-settings: 'kern';
-}
-
-p, ol, li, ul, h1, h2, h3, h4, h5, h6, strong, span, time {
-  &::selection {
-    color: var(--neutral-900);
-    background-color: var(--secondary-100);
-  }
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -102,41 +67,14 @@ h1, h2, h3, h4, h5, h6, strong {
   letter-spacing: -0.025rem; // -0.4px
 }
 
-p {
-  font-size: 1.25rem; // 20px
-  line-height: 2rem; // 32px
-}
+// Highlight text style
 
-
-h1 {
-  font-size: 3.5rem; // 56px
-  line-height: 3.75rem; // 60px
-}
-
-h2 {
-  font-size: 2.2rem;
-  line-height: 2.7rem;
-}
-
-@media (max-width: 420px) {
-  p {
-    font-size: 1.125rem; // 18px
-    line-height: 1.875rem; // 30px
+h1, h2, h3, h4, h5, h6, p, ol, li, ul,  strong, span, time {
+  &::selection {
+    color: var(--neutral-900);
+    background-color: var(--secondary-100);
   }
-  
-  h1 {
-   font-size: 2.25rem; // 36px
-   line-height: 2.5rem; // 40px
-  }
-
-  h2 {
-    font-size: 1.75rem;
-    line-height: 2.3rem;
-  }
-  
 }
-
-
 
 
 button {
@@ -221,6 +159,22 @@ button {
 
 // BG
 
+.bgPrimary100 {
+  background: var(--primary-100);
+}
+
+.bgSecondary100 {
+  background: var(--secondary-100);
+}
+
+.bgNeutral100 {
+  background: var(--neutral-100);
+}
+
+.bgNeutral900 {
+  background: var(--neutral-900);
+}
+
 .bg-grey-50 {
   background-color: var(--grey-50);
 }
@@ -231,4 +185,58 @@ button {
 
 .bg-grey-gradient-2 {
   background-image: radial-gradient(circle at bottom left,#ffffff 4%,#f1f7f6 100%);
+}
+
+
+// SwiperJS Slider
+
+
+
+.swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.25;
+  transform: scale(0.9);
+  -webkit-transition: all 0.5s 0s ease-in;
+  -moz-transition: all 0.5s 0s ease-in;
+  -o-transition: all 0.5s 0s ease-in;
+  transition: all 0.5s 0s ease-in;
+}
+
+.swiper-slide {
+  margin-right: 38vw;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  background: rgba(255, 255, 255, 0.816);
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+  border-radius: 99px !important;
+  top: 36% !important;
+
+  &::after {
+    font-size: 1rem !important;
+  }
+}
+
+.swiper-button-prev {
+  right: auto;
+  left: 25% !important;
+}
+
+.swiper-button-next {
+  left: auto;
+  right: 25% !important;
+}
+
+.swiper-pagination {
+  bottom: 4rem !important;
+
+  .swiper-pagination-bullet-active {
+    background: var(--primary-400);
+  }  
+}
+
+@media screen and (max-width: 640px) {
+  .swiper-button-prev, .swiper-button-next {
+    display: none !important;
+  }
 }

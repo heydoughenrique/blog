@@ -7,15 +7,33 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  
+  
   img {
     height: 40rem; // 600px
+  }
+
+  .imageContainerNext {
+    width: 100%;
+
+    > div {
+      position: unset !important;
+    }
+
+    .imageNext {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+    }
+      
   }
 
 }
 
 .hero {
   max-width: 600px;
+ 
 
   > span { 
     font-size: 1.4rem;
@@ -34,8 +52,10 @@
     margin-top: 2.5rem;
   }
 
+}
 
-  
+.sliderContainer {
+  padding: 4rem 0;
 }
 
 @media (max-width: 720px) {
